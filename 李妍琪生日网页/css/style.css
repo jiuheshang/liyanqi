@@ -1,0 +1,12 @@
+.fade-out {
+    animation: fadeOut 0.5s forwards; /* 动画持续时间为0.5秒 */
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1; /* 完全可见 */
+    }
+    100% {
+        opacity: 0; /* 完全透明 */
+    }
+}

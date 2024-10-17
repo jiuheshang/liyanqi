@@ -1,0 +1,35 @@
+#guestbook {
+    background: linear-gradient(to right, #d4a5a5, #ffcccb);
+}
+#messageForm {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#messageForm input, #messageForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#messageForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#messages {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.message {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}

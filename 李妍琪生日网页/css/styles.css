@@ -1,0 +1,44 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+
+.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dark-background {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light-background {
+    background-color: #ffeb3b;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.cake img {
+    width: 300px;
+    height: auto;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日快乐！</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/we.css">
+    <link rel="stylesheet" href="css/moments.css">
+    <link rel="stylesheet" href="css/guestbook.css">
+    <link rel="icon" href="img/tubiao.png" type="image/png"> <!-- 添加图标链接 -->
+</head>
+
+<body>
+    <nav>
+        <a href="#" onclick="showPage('home')">首页</a>
+        <a href="#" onclick="showPage('we')">我们</a>
+        <a href="#" onclick="showPage('moments')">我们的瞬间</a>
+        <a href="#" onclick="showPage('guestbook')">留言板</a>
+    </nav>
+
+    <div id="home" class="page active">
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+        <bokeh></bokeh>
+
+        <div class="mobile">最大化查看</div>
+        <div class="pyro">
+            <div class="before"></div>
+            <div class="after"></div>
+        </div>
+        <!-- <h1>Feliz Cumpleaños Pratik!</h1> -->
+        <h2 id="happy">李妍琪生日快乐!</h2>
+        <!-- <span>🎉</span> -->
+
+
+        <div id="tp_plate" class="plate"></div>
+        <div id="tp_cake" class="cake"></div>
+        <div id="tp_candle" class="candle">
+            <div id="flame" class="lit"></div>
+        </div>
+        <!-- <canvas id="fireworks"></canvas>
+        <div class="content">
+            <div class="lights" id="lights"></div>
+            <div class="cake-container">
+                <div class="cake-placeholder" id="cake">
+                    <img src="img\dangao.png" alt="生日蛋糕">
+                </div>
+                <div class="table" id="table"></div>
+            </div>
+        </div> -->
+        <button id="actionButton">开始喽</button>
+    </div>
+
+    <div id="we" class="page">
+        <div class="content">
+            <div class="friend-container">
+                <div class="friend-card liyq">
+                    <div class="friend-background" style="background-image: url('img/liyanqirenxinag.png');"></div>
+                    <a href="liyanqi.html" class="friend-image">
+                        <img src="img/liyanqi.png" alt="李妍琪">
+                    </a>
+                    <div class="friend-name">
+                        <h2>李<br>妍<br>琪</h2>
+                    </div>
+                </div>
+                <div class="friend-card caix">
+                    <div class="friend-background" style="background-image: url('img/tupian.jpeg');"></div>
+                    <a href="caixiao.html" class="friend-image">
+                        <img src="img/caixiao.png" alt="蔡筱">
+                    </a>
+                    <div class="friend-name">
+                        <h2>蔡<br>筱</h2>
+                    </div>
+                </div>
+                <div class="friend-card huojq">
+                    <div class="friend-background" style="background-image: url('img/huojianqiaorenxiang.png');"></div>
+                    <a href="huojianqiao.html" class="friend-image">
+                        <img src="img/huojianqiao.png" alt="霍建敲">
+                    </a>
+                    <div class="friend-name">
+                        <h2>霍<br>建<br>敲</h2>
+                    </div>
+                </div>
+                <div class="friend-card quans">
+                    <div class="friend-background" style="background-image: url('img/quansenrenxiang.png');"></div>
+                    <a href="quansen.html" class="friend-image">
+                        <img src="img/quansen.png" alt="全森">
+                    </a>
+                    <div class="friend-name">
+                        <h2>全<br>森</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="moments" class="page">
+        <div class="content">
+            <h1>我们的瞬间</h1>
+            <div class="box">
+                <ul class="minbox">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ol class="maxbox">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div id="guestbook" class="page">
+        <div class="content">
+            <h1>留言板</h1>
+            <form id="messageForm">
+                <input type="text" id="name" placeholder="你的名字" required>
+                <textarea id="message" placeholder="留言内容" required></textarea>
+                <button type="submit">提交留言</button>
+            </form>
+            <div id="messages"></div>
+        </div>
+    </div>
+
+    <audio id="birthdaySong" src="https://music.163.com/song/media/outer/url?id=2082151352.mp3"></audio>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

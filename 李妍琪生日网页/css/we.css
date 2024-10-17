@@ -1,0 +1,185 @@
+#we {
+    background: linear-gradient(135deg, #a8e6cf, #dcedc1);
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.friend-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.friend-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px; /* 调整内边距 */
+    margin-bottom: 30px; /* 调整底部间距 */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    height: 300px; /* 设置名片的高度 */
+}
+
+.friend-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.friend-info {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    margin-right: 20px;
+}
+
+.friend-name {
+    font-size: 48px;
+    font-family: 'STXingkai', 'STKaiti', 'SimSun', serif;
+    color: #000000;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    line-height: 1.2;
+    margin-left: 20px;
+    z-index: 2;
+}
+
+.friend-name h2 {
+    font-size: 48px;
+    font-family: 'STXingkai', 'STKaiti', 'SimSun', serif;
+    color: #000000;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    line-height: 1.2;
+    margin: 0;
+}
+
+.friend-info p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 0;
+    max-width: 200px;
+}
+
+.friend-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #dcedc1;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.friend-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .friend-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .friend-name {
+        margin: 10px 0;
+    }
+
+    .friend-image {
+        order: 1;
+    }
+
+    .friend-info p {
+        margin: 10px 0;
+    }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.friend-card {
+    animation: float 5s ease-in-out infinite;
+}
+
+.friend-card:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.friend-card:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.friend-card:nth-child(4) {
+    animation-delay: 3s;
+}
+
+/* 李妍琪和霍建敲的样式 */
+.friend-card.liyq, .friend-card.huojq {
+    justify-content: flex-start;
+}
+
+/* 蔡筱和全森的样式 */
+.friend-card.caix, .friend-card.quans {
+    justify-content: flex-end;
+}
+
+.friend-card.caix .friend-info, .friend-card.quans .friend-info {
+    margin-right: 20px;
+    flex-direction: row-reverse;
+}
+
+/* 放大动画效果 */
+@-webkit-keyframes scale-up-right {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+    }
+}
+
+@keyframes scale-up-right {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+    }
+}
+
+/* 头像悬停效果 */
+.friend-image:hover {
+    animation: scale-up-right 0.5s forwards; /* 应用放大动画 */
+}
